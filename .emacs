@@ -1,3 +1,6 @@
+(load-file "~/.emacs.d/cedet/cedet-devel-load.el")
+(load-file "~/.emacs.d/cedet/contrib/cedet-contrib-load.el")
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
@@ -10,8 +13,6 @@
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
-(load-file "~/.emacs.d/cedet/cedet-devel-load.el")
-(load-file "~/.emacs.d/cedet/contrib/cedet-contrib-load.el")
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
 (add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
