@@ -13,6 +13,18 @@
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
+
+;; Bootstrap my packages
+(use-package auto-complete :ensure t)
+(use-package ecb :ensure t)
+(use-package edbi :ensure t)
+(use-package epc :ensure t)
+(use-package ido :ensure t)
+(use-package org :ensure t)
+(use-package php-mode :ensure t)
+(use-package yasnippet :ensure t)
+
+
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
 (add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
