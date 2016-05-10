@@ -208,8 +208,7 @@
  '(diff-added ((t (:inherit diff-changed :foreground "green"))) t)
  '(diff-indicator-added ((t (:inherit diff-added))) t)
  '(diff-indicator-removed ((t (:inherit diff-removed))) t)
- '(diff-removed ((t (:inherit diff-changed :foreground "red"))) t)
- '(mmm-default-submode-face ((t nil))))
+ '(diff-removed ((t (:inherit diff-changed :foreground "red"))) t))
 
 
 (if (eq window-system 'x)
@@ -263,9 +262,6 @@ by using nxml's indentation rules."
 (add-hook 'php-mode-user-hook 'turn-on-font-lock)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(require 'mmm-mode)
-(setq mmm-global-mode 'maybe)
-
 (require 'yasnippet)
 (yas-global-mode 1)
 
@@ -288,25 +284,6 @@ by using nxml's indentation rules."
   (interactive)
   (let ((cmd (ido-completing-read "n98-magerun: " (magerun-commands))))
     (async-shell-command (format "%s %s" n98-magerun-executable cmd))))
-
-(mmm-add-group
- 'fancy-html
- '(
-   (html-php-tagged
-    :submode php-mode
-    :face mmm-code-submode-face
-    :front "<[?]php"
-    :back "[?]>")
-   (html-css-attribute
-    :submode css-mode
-    :face mmm-declaration-submode-face
-    :front "style=\""
-    :back "\"")
-   (html-css-attribute
-    :submode css-mode
-    :face mmm-declaration-submode-face
-    :front "meh=\""
-    :back "\"")))
 
 ;; (require 're-builder)
 ;; (setq reb-re-syntax 'string)
