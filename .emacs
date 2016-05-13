@@ -20,6 +20,7 @@
 ;; Bootstrap my packages
 (use-package afternoon-theme :ensure t)
 (use-package auto-complete :ensure t)
+(use-package cedet :ensure t)
 (use-package crontab-mode :ensure t)
 (use-package csv-mode :ensure t)
 (use-package docker-tramp :ensure t)
@@ -51,14 +52,9 @@
 
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
-(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
 
 (semantic-mode 1)
 (global-ede-mode 1)
-
-(semantic-load-enable-excessive-code-helpers)
-(semantic-load-enable-all-ectags-support)
-(global-srecode-minor-mode 1)
 
 (defun my-cedet-hook ()
   (local-set-key [(control return)] 'semantic-ia-complete-symbol)
@@ -72,14 +68,8 @@
 
 (global-auto-revert-mode t)
 
-;; (require 'semantic-sb)
-;; (require 'semantic/sb)
-;; (semantic-mode 1)
-
 (let ((default-directory "~/.emacs.d/elpa/"))
   (normal-top-level-add-subdirs-to-load-path))
-
-;; (require 'php-mode)
 
 (setq stack-trace-on-error t)
 
@@ -101,16 +91,7 @@
 (require 'epc)
 (require 'edbi)
 
-;; (require 'cl)
 (load "cl-macs" nil t) ; No provide in this file.
-
-
-;; (require 'sr-speedbar)
-
-
-;; (require 'eieio)
-
-;; (require 'ecb-autoloads)
 
 ;; Ido
 (require 'ido) (ido-mode t)
@@ -119,14 +100,6 @@
 (autoload 'idomenu "idomenu" nil t)
 
 (global-set-key "\C-ca" 'org-agenda)
-
-;; CC-mode
-;; (add-hook 'c-mode-hook '(lambda ()
-;; 			  (setq ac-sources (append '(ac-source-semantic) ac-sources))
-;; 			  (local-set-key (kbd "RET") 'newline-and-indent)
-;; 			  (linum-mode t)
-;; 			  (semantic-mode t)))
-
 
 (defun my-semantic-hook ()
   (imenu-add-to-menubar "TAGS"))
