@@ -1,6 +1,3 @@
-(load-file "~/.emacs.d/cedet/cedet-devel-load.el")
-(load-file "~/.emacs.d/cedet/contrib/cedet-contrib-load.el")
-
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
