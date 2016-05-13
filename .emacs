@@ -18,6 +18,7 @@
   (package-install 'use-package))
 
 ;; Bootstrap my packages
+(use-package afternoon-theme :ensure t)
 (use-package auto-complete :ensure t)
 (use-package crontab-mode :ensure t)
 (use-package csv-mode :ensure t)
@@ -156,9 +157,9 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
- '(custom-enabled-themes (quote (misterioso)))
- '(custom-safe-themes (quote ("3c51ad2472d07eeb687ae579091aed9cedf3d410358ce8ef5bcc78b0c1f3f9b7" default)))
+ '(custom-enabled-themes (quote (afternoon)))
  '(desktop-save-mode t)
+ '(diary-entry-marker (quote font-lock-variable-name-face))
  '(ecb-auto-activate t)
  '(ecb-layout-name "left15")
  '(ecb-layout-window-sizes (quote (("left15" (ecb-directories-buffer-name 0.17703349282296652 . 0.4807692307692308) (ecb-methods-buffer-name 0.17703349282296652 . 0.5)) ("left7" (ecb-directories-buffer-name 0.19617224880382775 . 0.5) (ecb-history-buffer-name 0.19617224880382775 . 0.23076923076923078) (ecb-methods-buffer-name 0.19617224880382775 . 0.25)))))
