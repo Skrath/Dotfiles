@@ -15,6 +15,7 @@
   (package-install 'use-package))
 
 ;; Bootstrap my packages
+;; See: https://github.com/jwiegley/use-package
 (use-package afternoon-theme :ensure t)
 (use-package auto-complete :ensure t)
 (use-package cedet :ensure t)
