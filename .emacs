@@ -31,6 +31,7 @@
 (use-package flymake-php :ensure t :defer t)
 (use-package geben :ensure t :defer t)
 (use-package git-commit :ensure t :defer t)
+(use-package gitconfig-mode :ensure t :defer t)
 (use-package haml-mode :ensure t :defer t)
 (use-package idomenu :ensure t)
 (use-package markdown-mode :ensure t :defer t)
