@@ -21,6 +21,7 @@
 (use-package cedet :ensure t)
 (use-package crontab-mode :ensure t :defer t)
 (use-package csv-mode :ensure t :defer t)
+(use-package docker :ensure t :defer t)
 (use-package docker-tramp :ensure t :defer t)
 (use-package dockerfile-mode :ensure t :defer t)
 (use-package ecb :ensure t)
