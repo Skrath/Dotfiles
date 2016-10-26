@@ -135,14 +135,24 @@
  '(diary-entry-marker (quote font-lock-variable-name-face))
  '(ecb-auto-activate t)
  '(ecb-layout-name "left15")
- '(ecb-layout-window-sizes (quote (("left15" (ecb-directories-buffer-name 0.17703349282296652 . 0.4807692307692308) (ecb-methods-buffer-name 0.17703349282296652 . 0.5)) ("left7" (ecb-directories-buffer-name 0.19617224880382775 . 0.5) (ecb-history-buffer-name 0.19617224880382775 . 0.23076923076923078) (ecb-methods-buffer-name 0.19617224880382775 . 0.25)))))
+ '(ecb-layout-window-sizes
+   (quote
+    (("left15"
+      (ecb-directories-buffer-name 0.17703349282296652 . 0.4807692307692308)
+      (ecb-methods-buffer-name 0.17703349282296652 . 0.5))
+     ("left7"
+      (ecb-directories-buffer-name 0.19617224880382775 . 0.5)
+      (ecb-history-buffer-name 0.19617224880382775 . 0.23076923076923078)
+      (ecb-methods-buffer-name 0.19617224880382775 . 0.25)))))
  '(ecb-major-modes-show-or-hide (quote (nil git-commit-mode)))
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
  '(ecb-source-path (quote (("/" "/"))))
  '(ecb-tip-of-the-day nil)
  '(ecb-use-speedbar-instead-native-tree-buffer nil)
- '(ede-project-directories (quote ("/home/chris/projects" "/home/chrisrasys/projects/srl.dev")))
+ '(ede-project-directories
+   (quote
+    ("/home/chris/projects" "/home/chrisrasys/projects/srl.dev")))
  '(geben-pause-at-entry-line t)
  '(global-auto-complete-mode t)
  '(global-semantic-decoration-mode t)
@@ -152,15 +162,31 @@
  '(nxml-child-indent 4)
  '(nxml-outline-child-indent 4)
  '(org-agenda-clockreport-parameter-plist (quote (:link t :maxlevel 5)))
- '(org-agenda-custom-commands (quote (("D" "Daily Task List" ((alltodo "" nil) (agenda "" ((org-agenda-sorting-strategy (quote (tag-up))) (org-agenda-span (quote day)) (org-deadline-warning-days 0)))) nil nil))))
+ '(org-agenda-custom-commands
+   (quote
+    (("D" "Daily Task List"
+      ((alltodo "" nil)
+       (agenda ""
+	       ((org-agenda-sorting-strategy
+		 (quote
+		  (tag-up)))
+		(org-agenda-span
+		 (quote day))
+		(org-deadline-warning-days 0))))
+      nil nil))))
  '(org-agenda-files (quote ("~/Documents/org" "~/Documents/org/clients")))
  '(org-agenda-include-all-todo t)
  '(org-agenda-start-with-clockreport-mode t)
  '(org-agenda-timegrid-use-ampm t)
  '(org-clock-into-drawer "LOGBOOK")
- '(org-clocktable-defaults (quote (:maxlevel 4 :lang "en" :scope file :block nil :wstart 1 :mstart 1 :tstart nil :tend nil :step nil :stepskip0 nil :fileskip0 nil :tags nil :emphasize nil :link nil :narrow 40! :indent t :formula nil :timestamp nil :level nil :tcolumns nil :formatter nil)))
- '(org-column ((t (:background "grey10" :strike-through nil :underline nil :slant normal :weight normal :height 98 :family "DejaVu Sans Mono"))))
- '(org-columns-default-format "%45ITEM(Details) %DEADLINE(Due) %ALLTAGS(Context) %7TODO(Status) %7Effort(Time){:} %7CLOCKSUM{Total}")
+ '(org-clocktable-defaults
+   (quote
+    (:maxlevel 4 :lang "en" :scope file :block nil :wstart 1 :mstart 1 :tstart nil :tend nil :step nil :stepskip0 nil :fileskip0 nil :tags nil :emphasize nil :link nil :narrow 40! :indent t :formula nil :timestamp nil :level nil :tcolumns nil :formatter nil)))
+ '(org-column
+   ((t
+     (:background "grey10" :strike-through nil :underline nil :slant normal :weight normal :height 98 :family "DejaVu Sans Mono"))))
+ '(org-columns-default-format
+   "%45ITEM(Details) %DEADLINE(Due) %ALLTAGS(Context) %7TODO(Status) %7Effort(Time){:} %7CLOCKSUM{Total}")
  '(org-default-notes-file "~/Documents/org/tasks.org")
  '(org-directory "~/Documents/org")
  '(org-enforce-todo-dependencies t)
@@ -169,7 +195,13 @@
  '(org-hierarchical-todo-statistics nil)
  '(org-refile-targets (quote ((org-agenda-files :level . 1))))
  '(org-todo-keywords (quote ((sequence "TODO" "IN PROGRESS" "DONE"))))
- '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "https://melpa.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
+ '(package-archives
+   (quote
+    (("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa" . "https://melpa.org/packages/")
+     ("marmalade" . "http://marmalade-repo.org/packages/"))))
+ '(powerline-color1 "#222912")
+ '(powerline-color2 "#09150F")
  '(save-place t nil (saveplace))
  '(semantic-mode t)
  '(show-paren-mode t)
