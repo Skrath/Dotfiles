@@ -24,12 +24,12 @@
 	branch = auto
 
 [user]
-	name = Your Name
-	email = Your.Name@blueacorn.com
+	name = Chris Rasys
+	email = chris.rasys@gmail.com
 
 [core]
-	editor = some_editor
-	excludesfile = /home/yourname/.gitignore_global
+	editor = emacs
+	excludesfile = /home/chris/.gitignore_global
 	whitespace = tabwidth=4
 
 [branch]
