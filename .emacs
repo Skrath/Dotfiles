@@ -148,7 +148,7 @@
       (ecb-history-buffer-name 0.19617224880382775 . 0.23076923076923078)
       (ecb-methods-buffer-name 0.19617224880382775 . 0.25)))))
  '(ecb-major-modes-show-or-hide (quote (nil git-commit-mode)))
- '(ecb-options-version "2.40")
+ '(ecb-options-version "2.50")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
  '(ecb-source-path (quote (("/" "/"))))
  '(ecb-tip-of-the-day nil)
