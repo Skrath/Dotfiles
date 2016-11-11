@@ -28,7 +28,7 @@
 	email = chris.rasys@gmail.com
 
 [core]
-	editor = emacs
+	editor = emacs -nw --no-desktop
 	excludesfile = /home/chris/.gitignore_global
 	whitespace = tabwidth=4
 
@@ -38,6 +38,9 @@
 
 [merge]
 	tool = merge_tool
+
+[commit]
+	template = ~/.gitmessage
 
 [alias]
 	# List commits in short form, with colors and branch/tag annotations
