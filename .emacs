@@ -40,7 +40,6 @@
 (use-package markdown-mode :ensure t :defer t)
 (use-package nginx-mode :ensure t :defer t)
 (use-package org :ensure t :defer t)
-(use-package org-jira :ensure t :defer t)
 (use-package php-mode :ensure t :defer t)
 (use-package python-mode :ensure t :defer t)
 (use-package regex-tool :ensure t :defer t)
