@@ -37,6 +37,7 @@
 (use-package haml-mode :ensure t :defer t)
 (use-package idomenu :ensure t)
 (use-package jira :ensure t :defer t)
+(use-package less-css-mode :ensure t :defer t)
 (use-package markdown-mode :ensure t :defer t)
 (use-package nginx-mode :ensure t :defer t)
 (use-package org :ensure t :defer t)
@@ -46,6 +47,7 @@
 (use-package sass-mode :ensure t :defer t)
 (use-package ssh-config-mode :ensure t :defer t)
 (use-package ssh-file-modes :ensure t :defer t)
+(use-package twig-mode :ensure t :defer t)
 (use-package vcl-mode :ensure t :defer t)
 (use-package visual-regexp :ensure t :defer t)
 (use-package yaml-mode :ensure t :defer t)
@@ -117,11 +119,11 @@
           "M-x "
           (all-completions "" obarray 'commandp))))))
 
-(eval-after-load "sgml-mode"
-  '(progn
-     (require 'tagedit)
-     (tagedit-add-paredit-like-keybindings)
-     (add-hook 'html-mode-hook (lambda () (tagedit-mode 1)))))
+;; (eval-after-load "sgml-mode"
+;;   '(progn
+;;      (require 'tagedit)
+;;      (tagedit-add-paredit-like-keybindings)
+;;      (add-hook 'html-mode-hook (lambda () (tagedit-mode 1)))))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
