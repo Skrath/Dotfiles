@@ -29,7 +29,7 @@
 
 [core]
 	editor = emacs -nw --no-desktop
-	excludesfile = /home/chris/.gitignore_global
+	excludesfile = ~/.gitignore
 	whitespace = tabwidth=4
 
 [branch]
