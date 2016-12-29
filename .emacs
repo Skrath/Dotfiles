@@ -162,6 +162,7 @@
  '(global-semantic-decoration-mode t)
  '(global-semantic-highlight-func-mode t)
  '(global-semantic-show-unmatched-syntax-mode t)
+ '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(nxml-child-indent 4)
  '(nxml-outline-child-indent 4)
@@ -171,12 +172,12 @@
     (("D" "Daily Task List"
       ((alltodo "" nil)
        (agenda ""
-	       ((org-agenda-sorting-strategy
-		 (quote
-		  (tag-up)))
-		(org-agenda-span
-		 (quote day))
-		(org-deadline-warning-days 0))))
+               ((org-agenda-sorting-strategy
+                 (quote
+                  (tag-up)))
+                (org-agenda-span
+                 (quote day))
+                (org-deadline-warning-days 0))))
       nil nil))))
  '(org-agenda-files (quote ("~/Documents/org" "~/Documents/org/clients")))
  '(org-agenda-include-all-todo t)
