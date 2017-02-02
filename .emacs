@@ -209,6 +209,7 @@
  '(powerline-color2 "#09150F")
  '(save-place t nil (saveplace))
  '(semantic-mode t)
+ '(sgml-basic-offset 4)
  '(show-paren-mode t)
  '(sr-speedbar-right-side nil))
 (custom-set-faces
