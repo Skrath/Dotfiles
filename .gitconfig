@@ -67,6 +67,9 @@
 	# Show repository contributers
 	who = shortlog -n -s --no-merges
 
+	# Show contributers by blame/diff count
+	who-lines = "!f() { git ls-tree -r -z --name-only HEAD -- $1 | xargs -0 -n1 git blame --line-porcelain HEAD |grep '^author '|sort|uniq -c|sort -nr ; }; f"
+
 	# Information about the current commit
 	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
         whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
