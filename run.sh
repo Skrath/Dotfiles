@@ -12,6 +12,6 @@ cd home-configs; find | while read file; do
         fi
 
         echo "Symlinking $PWD/$file -> ~/$file"
-        ln -s $PWD/$file ~/$file1
+        ln -s $PWD/$file ~/$file
     fi
 done
