@@ -6,5 +6,7 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.historyExplorer.enabled": true,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "files.trimTrailingWhitespace": true,
+    "editor.fontSize": 16
 }
