@@ -72,14 +72,14 @@
 
 	# Information about the current commit
 	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
-        whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
 
 	# See all commits related to a file
 	filelog = log -u
 	fl = log -u
 
-        # Concise commits related to file
-        follow = log --follow --stat
+	# Concise commits related to file
+	follow = log --follow --stat
 
 	# Show modified files in last commit
 	dl = "!git ll -1"
