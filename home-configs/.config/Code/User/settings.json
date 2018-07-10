@@ -9,5 +9,6 @@
     "workbench.iconTheme": "vscode-icons",
     "files.trimTrailingWhitespace": true,
     "editor.fontSize": 16,
-    "editor.autoClosingBrackets": false
+    "editor.autoClosingBrackets": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
